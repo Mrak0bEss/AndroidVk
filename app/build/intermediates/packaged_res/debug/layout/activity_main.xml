@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:id="@+id/parentLayout"
+    tools:context=".MainActivity">
+
+
+    <ImageButton
+        android:id="@+id/callButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="50dp"
+
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/round_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/call_end" />
+
+    <ImageButton
+        android:id="@+id/handButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="25dp"
+
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/round_button_hand"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/callButton"
+        app:srcCompat="@drawable/waving_hand" />
+
+    <ImageButton
+        android:id="@+id/microButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="25dp"
+
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/mic_video"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/videoButton"
+        app:srcCompat="@drawable/mic" />
+
+    <ImageButton
+        android:id="@+id/videoButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/mic_video"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@drawable/videocam" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+
+        android:layout_marginRight="130dp"
+        android:gravity="center"
+        app:cardCornerRadius="100dp"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imageFilterView2">
+        <!-- add a Image image.png in your Drawable folder -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar_boy" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="130dp"
+
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        app:cardCornerRadius="100dp"
+
+        app:layout_constraintTop_toTopOf="@id/imageFilterView3"
+        app:layout_constraintRight_toRightOf="parent">
+        <!-- add a Image image.png in your Drawable folder -->
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rgb"
+            tools:layout_conversion_absoluteHeight="150dp"
+            tools:layout_conversion_absoluteWidth="150dp"
+            tools:layout_editor_absoluteX="131dp"
+            tools:layout_editor_absoluteY="383dp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/imageFilterView2"
+        android:layout_width="400dp"
+        android:clipToOutline="true"
+        android:layout_height="250dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="128px"
+
+
+        android:background="@drawable/round_outline"
+        app:layout_constraintTop_toBottomOf="@id/smsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/imageFilterView3"
+        android:layout_width="400dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="256px"
+        android:layout_marginRight="16dp"
+
+        android:background="@drawable/round_outline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/handButton" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center"
+        android:text="@string/your_name"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:drawableRight="@drawable/mic2"
+        app:layout_constraintBottom_toBottomOf="@id/imageFilterView2"
+        app:layout_constraintRight_toRightOf="@id/imageFilterView2"
+        app:layout_constraintLeft_toLeftOf="@id/imageFilterView2"
+        />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="16pt"
+        android:maxWidth="300dp"
+        android:gravity="center"
+        android:text="@string/long_name"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:drawableRight="@drawable/mic2"
+        android:singleLine="true"
+        app:layout_constraintBottom_toBottomOf="@id/imageFilterView3"
+        app:layout_constraintRight_toRightOf="@id/imageFilterView3"
+        app:layout_constraintLeft_toLeftOf="@id/imageFilterView3"
+        />
+    <ImageButton
+        android:id="@+id/smsButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:autoLink=""
+
+        android:layout_marginTop="8dp"
+        android:background="@drawable/mic_video"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@drawable/sms" />
+    <ImageButton
+        android:id="@+id/shelfButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="50dp"
+        android:autoLink=""
+
+        android:layout_marginTop="8dp"
+        android:background="@drawable/mic_video"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/shelf_position" />
+
+    <ImageButton
+        android:id="@+id/contactButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/mic_video"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/shelfButton"
+        app:layout_constraintRight_toRightOf="@id/smsButton"
+
+        app:srcCompat="@drawable/contacts" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
