@@ -1,2 +1,2 @@
 # AndroidVk
-![alt text](http://url/to/img.png)
+![Пример работы](https://github.com/Mrak0bEss/AndroidVk/blob/main/img.png)
