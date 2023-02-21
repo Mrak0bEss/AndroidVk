@@ -113,10 +113,10 @@
         android:id="@+id/imageFilterView2"
         android:layout_width="400dp"
         android:clipToOutline="true"
-        android:layout_height="250dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="128px"
+        android:layout_height="250sp"
+        android:layout_marginLeft="16sp"
+        android:layout_marginRight="16sp"
+        android:layout_marginTop="4sp"
 
 
         android:background="@drawable/round_outline"
@@ -128,16 +128,16 @@
     <androidx.constraintlayout.utils.widget.ImageFilterView
         android:id="@+id/imageFilterView3"
         android:layout_width="400dp"
-        android:layout_height="250dp"
+        android:layout_height="250sp"
         android:layout_marginLeft="16dp"
-        android:layout_marginBottom="256px"
+        android:layout_marginTop="4sp"
         android:layout_marginRight="16dp"
 
         android:background="@drawable/round_outline2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/handButton" />
+        app:layout_constraintTop_toBottomOf="@id/imageFilterView2" />
 
     <TextView
         android:id="@+id/textView1"
