@@ -141,13 +141,13 @@ public class MainActivity extends AppCompatActivity {
                     ConstraintLayout constraintLayout = findViewById(R.id.parentLayout);
                     ConstraintSet constraintSet = new ConstraintSet();
                     constraintSet.clone(constraintLayout);
-                    constraintSet.connect(R.id.imageFilterView2, ConstraintSet.TOP, R.id.smsButton, ConstraintSet.BOTTOM, 1180);
+                    constraintSet.connect(R.id.imageFilterView3, ConstraintSet.TOP, R.id.smsButton, ConstraintSet.BOTTOM, 5);
                     // constraintSet.connect(R.id.imageFilterView3,ConstraintSet.TOP,R.id.imageFilterView2,ConstraintSet.BOTTOM,0);
 
                     constraintSet.applyTo(constraintLayout);
                     ConstraintSet constraintSet2 = new ConstraintSet();
                     constraintSet.clone(constraintLayout);
-                    constraintSet.connect(R.id.imageFilterView3, ConstraintSet.BOTTOM, R.id.imageFilterView2, ConstraintSet.TOP, 175);
+                    constraintSet.connect(R.id.imageFilterView2, ConstraintSet.TOP, R.id.imageFilterView3, ConstraintSet.BOTTOM, 5);
                     // constraintSet.connect(R.id.imageFilterView3,ConstraintSet.TOP,R.id.imageFilterView2,ConstraintSet.BOTTOM,0);
 
                     constraintSet.applyTo(constraintLayout);
@@ -156,13 +156,13 @@ public class MainActivity extends AppCompatActivity {
                     ConstraintLayout constraintLayout = findViewById(R.id.parentLayout);
                     ConstraintSet constraintSet = new ConstraintSet();
                     constraintSet.clone(constraintLayout);
-                    constraintSet.connect(R.id.imageFilterView2, ConstraintSet.TOP, R.id.smsButton, ConstraintSet.BOTTOM, 128);
+                    constraintSet.connect(R.id.imageFilterView2, ConstraintSet.TOP, R.id.smsButton, ConstraintSet.BOTTOM, 5);
                     // constraintSet.connect(R.id.imageFilterView3,ConstraintSet.TOP,R.id.imageFilterView2,ConstraintSet.BOTTOM,0);
 
                     constraintSet.applyTo(constraintLayout);
 
                     constraintSet.clone(constraintLayout);
-                    constraintSet.connect(R.id.imageFilterView3, ConstraintSet.BOTTOM, R.id.callButton, ConstraintSet.TOP, 256);
+                    constraintSet.connect(R.id.imageFilterView3, ConstraintSet.TOP, R.id.imageFilterView2, ConstraintSet.BOTTOM, 5);
                     // constraintSet.connect(R.id.imageFilterView3,ConstraintSet.TOP,R.id.imageFilterView2,ConstraintSet.BOTTOM,0);
 
                     constraintSet.applyTo(constraintLayout);
